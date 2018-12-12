@@ -11,8 +11,8 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 app.get('/mat', (req, res) => {
-  res.send('hello!')
-  res.send('goodbye')
+  res.send('hello! Goodbye!!')
+
 })
 
 app.get('/', (req, res) => res.render('pages/index'))
