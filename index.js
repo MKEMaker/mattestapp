@@ -12,6 +12,7 @@ app.set('view engine', 'ejs')
 
 app.get('/mat', (req, res) => {
   res.send('hello!')
+  res.send('goodbye')
 })
 
 app.get('/', (req, res) => res.render('pages/index'))
