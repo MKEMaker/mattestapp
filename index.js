@@ -15,6 +15,10 @@ app.get('/andrew', (req, res) => {
 
 })
 
+app.get('/steve', (req, res) => {
+	res.send('fuck off')
+}
+
 app.get('/', (req, res) => res.render('pages/index'))
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
