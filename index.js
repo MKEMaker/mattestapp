@@ -19,6 +19,14 @@ app.get('/steve', (req, res) => {
 	res.send('fuck off')
 })
 
+app.get('/guess', (req, res) => {
+  if(req.query.guess == '7') {
+    res.send('correct!')
+  } else {
+    res.send('incorrect!')
+  }
+})
+
 app.get('/', (req, res) => res.render('pages/index'))
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
