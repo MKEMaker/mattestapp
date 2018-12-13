@@ -10,7 +10,7 @@ app.set('views', path.join(__dirname, 'views'))
 
 app.set('view engine', 'ejs')
 
-app.get('/mat', (req, res) => {
+app.get('/andrew', (req, res) => {
   res.send('hello! Goodbye!!')
 
 })
