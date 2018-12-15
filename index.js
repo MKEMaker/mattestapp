@@ -11,13 +11,16 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 app.get('/andrew', (req, res) => {
-  res.send('hello!''Goodbye!!')
+  res.send('hello!' \
+   'Goodbye!!')
 
 })
 
 app.get('/steve', (req, res) => {
 	res.send('fuck off')
 })
+
+app.get(/guess?('guess=7')
 
 app.get('/guess', (req, res) => {
   if(req.query.guess == '7') {
