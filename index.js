@@ -11,8 +11,12 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 app.get('/andrew', (req, res) => {
+<<<<<<< HEAD
   res.send('hello!' \
    'Goodbye!!')
+=======
+  res.send('hello! Goodbye!!')
+>>>>>>> 4e5b6b96056146f7a70dc017b212b3d91311b618
 
 })
 
