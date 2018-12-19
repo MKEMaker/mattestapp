@@ -20,7 +20,7 @@ app.get('/steve', (req, res) => {
 
 // https://mattestapp.herokuapp.com/guess?guess=7
 app.get('/guess', (req, res) => {
-  if(req.query.guess == '7') {
+  if(req.query.guess == '7' || req.query.guess == '14') {
     res.send('correct!')
   } else {
     res.send('incorrect!')
