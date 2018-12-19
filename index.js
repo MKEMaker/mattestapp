@@ -11,21 +11,14 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 app.get('/andrew', (req, res) => {
-<<<<<<< HEAD
-  res.send('hello!' \
-   'Goodbye!!')
-=======
   res.send('hello! Goodbye!!')
->>>>>>> 4e5b6b96056146f7a70dc017b212b3d91311b618
-
 })
 
 app.get('/steve', (req, res) => {
 	res.send('fuck off')
 })
 
-app.get(/guess?('guess=7')
-
+// https://mattestapp.herokuapp.com/guess?guess=7
 app.get('/guess', (req, res) => {
   if(req.query.guess == '7') {
     res.send('correct!')
